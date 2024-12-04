@@ -1,0 +1,49 @@
+import { WAHATriggerV202411 } from './WAHATriggerV202411';
+
+test('WAHATriggerV202411.outputs', () => {
+	const node = new WAHATriggerV202411();
+	expect(node.description.outputs).toEqual([
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+		'main',
+	]);
+	expect(node.description.outputNames).toEqual([
+		'session.status',
+		'message',
+		'message.reaction',
+		'message.any',
+		'message.ack',
+		'message.revoked',
+		'state.change',
+		'group.join',
+		'group.leave',
+		'presence.update',
+		'poll.vote',
+		'poll.vote.failed',
+		'chat.archive',
+		'call.received',
+		'call.accepted',
+		'call.rejected',
+		'label.upsert',
+		'label.deleted',
+		'label.chat.added',
+		'label.chat.deleted',
+	]);
+});
